@@ -1,4 +1,4 @@
-# Classimax By Themefisher
+
 
 Here we are offering Classimax, the most popular free Bootstrap classified website template ever created. It has been downloaded over 11500+ times and based on it has created loads of websites. It comes with a highly responsive design. You will get it completely free and documented!
 
