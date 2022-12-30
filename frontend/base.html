@@ -60,14 +60,14 @@
                                     </a>
                                     <!-- Dropdown list -->
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item @@about" href="{% url 'about' %}">About Us</a></li>
+                                        <li><a class="dropdown-item @@about" href="{% url 'about.html' %}">About Us</a></li>
                                         <li><a class="dropdown-item @@contact" href="contact-us.html">Contact Us</a></li>
                                         <li><a class="dropdown-item @@profile" href="user-profile.html">User Profile</a></li>
-                                        <li><a class="dropdown-item @@404" href="{% url '404' %}">404 Page</a></li>
+                                        <li><a class="dropdown-item @@404" href="{% url '404.html' %}">404 Page</a></li>
                                         <li><a class="dropdown-item @@package" href="package.html">Package</a></li>
                                         <li><a class="dropdown-item @@singlePage" href="single.html">Single Page</a></li>
                                         <li><a class="dropdown-item @@store" href="store.html">Store Single</a></li>
-                                        <li><a class="dropdown-item @@blog" href="blog.html">Blog</a></li>
+                                        <li><a class="dropdown-item @@blog" href="{% url 'blog.html' %}">Blog</a></li>
                                         <li><a class="dropdown-item @@singleBlog" href="single-blog.html">Blog Details</a></li>
                                         <li><a class="dropdown-item @@terms" href="terms-condition.html">Terms &amp; Conditions</a></li>
                                     </ul>
@@ -79,7 +79,7 @@
                                     <!-- Dropdown list -->
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item @@category" href="category.html">Ad-Gird View</a></li>
-                                        <li><a class="dropdown-item @@listView" href="{% url 'adlist' %}">Ad-List View</a></li>
+                                        <li><a class="dropdown-item @@listView" href="{% url 'adlist.html' %}">Ad-List View</a></li>
                                         
                                         <li class="dropdown dropdown-submenu dropleft">
                                             <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0201" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
@@ -97,7 +97,7 @@
                                     <a class="nav-link login-button" href="login.html">Login</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white add-button" href="ad-listing.html"><i class="fa fa-plus-circle"></i> Add Listing</a>
+                                    <a class="nav-link text-white add-button" href="{% url 'adlisting.html' %}"><i class="fa fa-plus-circle"></i> Add Listing</a>
                                 </li>
                             </ul>
                         </div>
@@ -151,7 +151,7 @@
                 <li><a href="store.html">Store Single</a></li>
                 <li><a href="single-blog.html">Single Post</a>
                 </li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="{% url 'blog.html' %}">Blog</a></li>
     
     
     
