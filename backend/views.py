@@ -23,3 +23,27 @@ def category(request):
 
 def contact(request):
     return render(request,'contact.html')
+
+def login(request):
+    return render(request,'login.html')
+
+def package(request):
+    return render(request,'package.html')
+
+def register(request):
+    return render(request,'register.html')
+
+def singleblog(request):
+    return render(request,'single-blog.html')
+
+def single(request):
+    return render(request,'single.html')
+
+def store(request):
+    return render(request,'store.html')
+
+def terms(request):
+    return render(request,'terms-condition.html')
+
+def profile(request):
+    return render(request,'user-profile.html')
