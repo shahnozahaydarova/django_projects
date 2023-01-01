@@ -41,7 +41,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <nav class="navbar navbar-expand-lg navbar-light navigation">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="{% url 'index' %}">
                             <img src="{% static 'images/logo.png' %}" alt="">
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -51,7 +51,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto main-nav ">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">Home</a>
+                                    <a class="nav-link" href="{% url 'index' %}">Home</a>
                                 </li>
                                 
                                 <li class="nav-item dropdown dropdown-slide @@pages">
@@ -60,16 +60,16 @@
                                     </a>
                                     <!-- Dropdown list -->
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item @@about" href="{% url 'about.html' %}">About Us</a></li>
-                                        <li><a class="dropdown-item @@contact" href="contact-us.html">Contact Us</a></li>
-                                        <li><a class="dropdown-item @@profile" href="user-profile.html">User Profile</a></li>
-                                        <li><a class="dropdown-item @@404" href="{% url '404.html' %}">404 Page</a></li>
-                                        <li><a class="dropdown-item @@package" href="package.html">Package</a></li>
-                                        <li><a class="dropdown-item @@singlePage" href="single.html">Single Page</a></li>
-                                        <li><a class="dropdown-item @@store" href="store.html">Store Single</a></li>
+                                        <li><a class="dropdown-item @@about" href="{% url 'about' %}">About Us</a></li>
+                                        <li><a class="dropdown-item @@contact" href="{% url 'contact-us.html' %}">Contact Us</a></li>
+                                        <li><a class="dropdown-item @@profile" href="{% url 'user-profile.html' %}">User Profile</a></li>
+                                        <li><a class="dropdown-item @@404" href="{% url '404' %}">404 Page</a></li>
+                                        <li><a class="dropdown-item @@package" href="{% url 'package.html' %}">Package</a></li>
+                                        <li><a class="dropdown-item @@singlePage" href="{% url 'single.html' %}">Single Page</a></li>
+                                        <li><a class="dropdown-item @@store" href="{% url 'store.html' %}">Store Single</a></li>
                                         <li><a class="dropdown-item @@blog" href="{% url 'blog.html' %}">Blog</a></li>
-                                        <li><a class="dropdown-item @@singleBlog" href="single-blog.html">Blog Details</a></li>
-                                        <li><a class="dropdown-item @@terms" href="terms-condition.html">Terms &amp; Conditions</a></li>
+                                        <li><a class="dropdown-item @@singleBlog" href="{% url 'single-blog.html' %}">Blog Details</a></li>
+                                        <li><a class="dropdown-item @@terms" href="{% url 'terms-conditions.html' %}">Terms &amp; Conditions</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown dropdown-slide @@listing">
@@ -78,15 +78,15 @@
                                     </a>
                                     <!-- Dropdown list -->
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item @@category" href="category.html">Ad-Gird View</a></li>
+                                        <li><a class="dropdown-item @@category" href="{% url 'category.html' %}">Ad-Gird View</a></li>
                                         <li><a class="dropdown-item @@listView" href="{% url 'adlist.html' %}">Ad-List View</a></li>
                                         
                                         <li class="dropdown dropdown-submenu dropleft">
                                             <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0201" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
                         
                                             <ul class="dropdown-menu" aria-labelledby="dropdown0201">
-                                                <li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
-                                                <li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'index' %}">Submenu 01</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'index' %}">Submenu 02</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -94,7 +94,7 @@
                             </ul>
                             <ul class="navbar-nav ml-auto mt-10">
                                 <li class="nav-item">
-                                    <a class="nav-link login-button" href="login.html">Login</a>
+                                    <a class="nav-link login-button" href="{% url 'login.html' %}">Login</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-white add-button" href="{% url 'adlisting.html' %}"><i class="fa fa-plus-circle"></i> Add Listing</a>
