@@ -14,7 +14,7 @@
 					<div class="widget user">
 						<!-- User Image -->
 						<div class="image d-flex justify-content-center">
-							<img src="images/user/user-thumb.jpg" alt="" class="">
+							<img src="{% static 'images/user/user-thumb.jpg' %}" alt="" class="">
 						</div>
 						<!-- User Name -->
 						<h5 class="text-center">Samanta Doe</h5>
@@ -22,10 +22,10 @@
 					<!-- Dashboard Links -->
           <div class="widget user-dashboard-menu">
             <ul>
-              <li><a href="index.html">Savings Dashboard</a></li>
-              <li><a href="index.html">Saved Offer <span>(5)</span></a></li>
-              <li><a href="index.html">Favourite Stores <span>(3)</span></a></li>
-              <li><a href="index.html">Recommended</a></li>
+              <li><a href="{% url 'index' %}">Savings Dashboard</a></li>
+              <li><a href="{% url 'index' %}">Saved Offer <span>(5)</span></a></li>
+              <li><a href="{% url 'index' %}">Favourite Stores <span>(3)</span></a></li>
+              <li><a href="{% url 'index' %}">Recommended</a></li>
             </ul>
           </div>
 				</div>

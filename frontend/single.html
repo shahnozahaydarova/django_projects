@@ -56,19 +56,19 @@
 					<!-- product slider -->
 					<div class="product-slider">
 						<div class="product-slider-item my-4" data-image="images/products/products-1.jpg">
-							<img class="img-fluid w-100" src="images/products/products-1.jpg" alt="product-img">
+							<img class="img-fluid w-100" src="{% static 'images/products/products-1.jpg' %}" alt="product-img">
 						</div>
 						<div class="product-slider-item my-4" data-image="images/products/products-2.jpg">
-							<img class="d-block img-fluid w-100" src="images/products/products-2.jpg" alt="Second slide">
+							<img class="d-block img-fluid w-100" src="{% static 'images/products/products-2.jpg' %}" alt="Second slide">
 						</div>
 						<div class="product-slider-item my-4" data-image="images/products/products-3.jpg">
-							<img class="d-block img-fluid w-100" src="images/products/products-3.jpg" alt="Third slide">
+							<img class="d-block img-fluid w-100" src="{% static 'images/products/products-3.jpg' %}" alt="Third slide">
 						</div>
 						<div class="product-slider-item my-4" data-image="images/products/products-1.jpg">
-							<img class="d-block img-fluid w-100" src="images/products/products-1.jpg" alt="Third slide">
+							<img class="d-block img-fluid w-100" src="{% static 'images/products/products-1.jpg' %}" alt="Third slide">
 						</div>
 						<div class="product-slider-item my-4" data-image="images/products/products-2.jpg">
-							<img class="d-block img-fluid w-100" src="images/products/products-2.jpg" alt="Third slide">
+							<img class="d-block img-fluid w-100" src="{% static 'images/products/products-2.jpg' %}" alt="Third slide">
 						</div>
 					</div>
 					<!-- product slider -->
@@ -155,7 +155,7 @@
 								<div class="product-review">
 									<div class="media">
 										<!-- Avater -->
-										<img src="images/user/user-thumb.jpg" alt="avater">
+										<img src="{% static 'images/user/user-thumb.jpg' %}" alt="avater">
 										<div class="media-body">
 											<!-- Ratings -->
 											<div class="ratings">
@@ -228,13 +228,13 @@
 					</div>
 					<!-- User Profile widget -->
 					<div class="widget user text-center">
-						<img class="rounded-circle img-fluid mb-5 px-5" src="images/user/user-thumb.jpg" alt="">
-						<h4><a href="user-profile.html">Jonathon Andrew</a></h4>
+						<img class="rounded-circle img-fluid mb-5 px-5" src="{% static 'images/user/user-thumb.jpg' %}" alt="">
+						<h4><a href="{% url 'user-profile.html' %}">Jonathon Andrew</a></h4>
 						<p class="member-time">Member Since Jun 27, 2017</p>
-						<a href="single.html">See all ads</a>
+						<a href="{% url 'single.html' %}">See all ads</a>
 						<ul class="list-inline mt-20">
-							<li class="list-inline-item"><a href="contact-us.html" class="btn btn-contact d-inline-block  btn-primary px-lg-5 my-1 px-md-3">Contact</a></li>
-							<li class="list-inline-item"><a href="single.html" class="btn btn-offer d-inline-block btn-primary ml-n1 my-1 px-lg-4 px-md-3">Make an
+							<li class="list-inline-item"><a href="{% url 'contact-us.html' %}" class="btn btn-contact d-inline-block  btn-primary px-lg-5 my-1 px-md-3">Contact</a></li>
+							<li class="list-inline-item"><a href="{% url 'single.html' %}" class="btn btn-offer d-inline-block btn-primary ml-n1 my-1 px-lg-4 px-md-3">Make an
 									offer</a></li>
 						</ul>
 					</div>
@@ -270,7 +270,7 @@
 							your fellow users.
 						</p>
 						<!-- Submii button -->
-						<a href="single.html" class="btn btn-transparent-white">Submit Listing</a>
+						<a href="{% url 'single.html' %}" class="btn btn-transparent-white">Submit Listing</a>
 					</div>
 
 				</div>

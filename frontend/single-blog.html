@@ -12,10 +12,10 @@
 				<article class="single-post">
 					<h2>Donec id dolor in erat imperdiet.</h2>
 					<ul class="list-inline">
-						<li class="list-inline-item">by <a href="user-profile.html">Admin</a></li>
+						<li class="list-inline-item">by <a href="{% url 'user-profile.html' %}">Admin</a></li>
 						<li class="list-inline-item">Nov 22, 2016</li>
 					</ul>
-					<img src="images/blog/post-4.jpg" alt="article-01">
+					<img src="{% static 'images/blog/post-4.jpg' %}" alt="article-01">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt labore et dolore
 						magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.ex ea
 						commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
@@ -79,11 +79,11 @@
 						<!-- Widget Header -->
 						<h5 class="widget-header">Categories</h5>
 						<ul class="category-list">
-							<li><a href="category.html">Appearel <span class="float-right">(2)</span></a></li>
-							<li><a href="category.html">Accesories <span class="float-right">(5)</span></a></li>
-							<li><a href="category.html">Business<span class="float-right">(7)</span></a></li>
-							<li><a href="category.html">Entertaiment<span class="float-right">(3)</span></a></li>
-							<li><a href="category.html">Education<span class="float-right">(9)</span></a></li>
+							<li><a href="{% url 'category.html' %}">Appearel <span class="float-right">(2)</span></a></li>
+							<li><a href="{% url 'category.html' %}">Accesories <span class="float-right">(5)</span></a></li>
+							<li><a href="{% url 'category.html' %}">Business<span class="float-right">(7)</span></a></li>
+							<li><a href="{% url 'category.html' %}">Entertaiment<span class="float-right">(3)</span></a></li>
+							<li><a href="{% url 'category.html' %}">Education<span class="float-right">(9)</span></a></li>
 						</ul>
 					</div>
 					<!-- Archive Widget -->
