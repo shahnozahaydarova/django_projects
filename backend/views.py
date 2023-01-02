@@ -12,9 +12,6 @@ def about(request):
 def ad_list(request):
     return render(request,'ad-list-view.html')
 
-def ad_listing(request):
-    return render(request,'ad-listing.html')
-
 def blog(request):
     return render(request,'blog.html')
 

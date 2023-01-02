@@ -61,15 +61,15 @@
                                     </a>
                                     <!-- Dropdown list -->
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item @@about" href="{% url 'about' %}">About Us</a></li>
-                                        <li><a class="dropdown-item @@contact" href="{% url 'contact-us.html' %}">Contact Us</a></li>
-                                        <li><a class="dropdown-item @@profile" href="{% url 'user-profile.html' %}">User Profile</a></li>
-                                        <li><a class="dropdown-item @@404" href="{% url '404' %}">404 Page</a></li>
-                                        <li><a class="dropdown-item @@package" href="{% url 'package.html' %}">Package</a></li>
-                                        <li><a class="dropdown-item @@singlePage" href="{% url 'single.html' %}">Single Page</a></li>
+                                        <li><a class="dropdown-item @@about" href="{% url 'about' %}">Biz haqimizda</a></li>
+                                        <li><a class="dropdown-item @@contact" href="{% url 'contact-us.html' %}">Biz bilan bog'lanish</a></li>
+                                        <li><a class="dropdown-item @@profile" href="{% url 'user-profile.html' %}">Foydalanuvchi profili</a></li>
+                                        <li><a class="dropdown-item @@404" href="{% url '404' %}">404 sahifa</a></li>
+                                        <li><a class="dropdown-item @@package" href="{% url 'package.html' %}">Paketlar</a></li>
+                                        <li><a class="dropdown-item @@singlePage" href="{% url 'single.html' %}">Yagona mahsulotlar</a></li>
                                         <li><a class="dropdown-item @@blog" href="{% url 'blog.html' %}">Blog</a></li>
-                                        <li><a class="dropdown-item @@singleBlog" href="{% url 'single-blog.html' %}">Blog Details</a></li>
-                                        <li><a class="dropdown-item @@terms" href="{% url 'terms-conditions.html' %}">Terms &amp; Conditions</a></li>
+                                        <li><a class="dropdown-item @@singleBlog" href="{% url 'single-blog.html' %}">Blog tafsilotlari</a></li>
+                                        <li><a class="dropdown-item @@terms" href="{% url 'terms-conditions.html' %}">Foydalanish shartlari</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown dropdown-slide @@listing">
@@ -78,26 +78,16 @@
                                     </a>
                                     <!-- Dropdown list -->
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item @@category" href="{% url 'category.html' %}">Ad-Gird View</a></li>
-                                        <li><a class="dropdown-item @@listView" href="{% url 'adlist.html' %}">Ad-List View</a></li>
+                                        <li><a class="dropdown-item @@category" href="{% url 'category.html' %}">Mahsulotlar ro'yxati</a></li>
+                                        <li><a class="dropdown-item @@listView" href="{% url 'adlist.html' %}">Reklamalar ro'yxati</a></li>
                                         
-                                        <li class="dropdown dropdown-submenu dropleft">
-                                            <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0201" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
-                        
-                                            <ul class="dropdown-menu" aria-labelledby="dropdown0201">
-                                                <li><a class="dropdown-item" href="{% url 'index' %}">Submenu 01</a></li>
-                                                <li><a class="dropdown-item" href="{% url 'index' %}">Submenu 02</a></li>
-                                            </ul>
-                                        </li>
+                                        
                                     </ul>
                                 </li>
                             </ul>
                             <ul class="navbar-nav ml-auto mt-10">
                                 <li class="nav-item">
                                     <a class="nav-link login-button" href="{% url 'login.html' %}">Kirish</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white add-button" href="{% url 'adlisting.html' %}"><i class="fa fa-plus-circle"></i>Ro'yxatni qo'shish</a>
                                 </li>
                             </ul>
                         </div>
