@@ -22,7 +22,7 @@ def category(request):
     return render(request,'category.html')
 
 def contact(request):
-    return render(request,'contact.html')
+    return render(request,'contact-us.html')
 
 def login(request):
     return render(request,'login.html')

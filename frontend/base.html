@@ -51,12 +51,13 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto main-nav ">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="{% url 'index' %}">Home</a>
+                                    <a class="nav-link" href="{% url 'index' %}">Asosiy sahifa</a>
                                 </li>
                                 
                                 <li class="nav-item dropdown dropdown-slide @@pages">
                                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Pages <span><i class="fa fa-angle-down"></i></span>
+                                        
+                                        Sahifalar <span><i class="fa fa-angle-down"></i></span>
                                     </a>
                                     <!-- Dropdown list -->
                                     <ul class="dropdown-menu">
@@ -66,7 +67,6 @@
                                         <li><a class="dropdown-item @@404" href="{% url '404' %}">404 Page</a></li>
                                         <li><a class="dropdown-item @@package" href="{% url 'package.html' %}">Package</a></li>
                                         <li><a class="dropdown-item @@singlePage" href="{% url 'single.html' %}">Single Page</a></li>
-                                        <li><a class="dropdown-item @@store" href="{% url 'store.html' %}">Store Single</a></li>
                                         <li><a class="dropdown-item @@blog" href="{% url 'blog.html' %}">Blog</a></li>
                                         <li><a class="dropdown-item @@singleBlog" href="{% url 'single-blog.html' %}">Blog Details</a></li>
                                         <li><a class="dropdown-item @@terms" href="{% url 'terms-conditions.html' %}">Terms &amp; Conditions</a></li>
@@ -74,7 +74,7 @@
                                 </li>
                                 <li class="nav-item dropdown dropdown-slide @@listing">
                                     <a class="nav-link dropdown-toggle" href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Listing <span><i class="fa fa-angle-down"></i></span>
+                                        Ro'yxatlar <span><i class="fa fa-angle-down"></i></span>
                                     </a>
                                     <!-- Dropdown list -->
                                     <ul class="dropdown-menu">
@@ -94,10 +94,10 @@
                             </ul>
                             <ul class="navbar-nav ml-auto mt-10">
                                 <li class="nav-item">
-                                    <a class="nav-link login-button" href="{% url 'login.html' %}">Login</a>
+                                    <a class="nav-link login-button" href="{% url 'login.html' %}">Kirish</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white add-button" href="{% url 'adlisting.html' %}"><i class="fa fa-plus-circle"></i> Add Listing</a>
+                                    <a class="nav-link text-white add-button" href="{% url 'adlisting.html' %}"><i class="fa fa-plus-circle"></i>Ro'yxatni qo'shish</a>
                                 </li>
                             </ul>
                         </div>
@@ -148,9 +148,7 @@
                 <ul>
                 <li><a href="category.html">Category</a></li>
                 <li><a href="single.html">Single Page</a></li>
-                <li><a href="store.html">Store Single</a></li>
-                <li><a href="single-blog.html">Single Post</a>
-                </li>
+                <li><a href="single-blog.html">Single Post</a>                </li>
                 <li><a href="{% url 'blog.html' %}">Blog</a></li>
     
     
