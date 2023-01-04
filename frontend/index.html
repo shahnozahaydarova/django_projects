@@ -82,15 +82,18 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="section-title">
-					<h2>Trending Adds</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, magnam.</p>
+					<h2>Asosiy mahsulotlar</h2>
 				</div>
 			</div>
 		</div>
+
+		
 		<div class="row">
 			<!-- offer 01 -->
 			<div class="col-lg-12">
 				<div class="trending-ads-slide">
+
+					{% for am in ams %}
 					<div class="col-sm-12 col-lg-4">
 						<!-- product card -->
 <div class="product-item bg-light">
@@ -98,20 +101,17 @@
 		<div class="thumb-content">
 			<!-- <div class="price">$200</div> -->
 			<a href="{% url 'single.html' %}">
-				<img class="card-img-top img-fluid" src="{% static 'images/products/products-1.jpg' %}" alt="Card image cap">
+				<img class="card-img-top img-fluid" src="{{ am.img }}" alt="Card image cap">
 			</a>
 		</div>
 		<div class="card-body">
-		    <h4 class="card-title"><a href="{% url 'single.html' %}">11inch Macbook Air</a></h4>
+		    <h4 class="card-title"><a href="{% url 'single.html' %}">{{ am.name }}</a></h4>
 		    <ul class="list-inline product-meta">
 		    	<li class="list-inline-item">
-		    		<a href="{% url 'single.html' %}"><i class="fa fa-folder-open-o"></i>Electronics</a>
-		    	</li>
-		    	<li class="list-inline-item">
-		    		<a href="{% url 'category.html' %}"><i class="fa fa-calendar"></i>26th December</a>
+		    		<a href="{% url 'category.html' %}"><i class="fa fa-calendar"></i>{{ am.date }}</a>
 		    	</li>
 		    </ul>
-		    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquam!</p>
+		    <p class="card-text"><i class="fa fa-folder-open-o"></i>{{ am.content}}</p>
 		    <div class="product-ratings">
 		    	<ul class="list-inline">
 		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
@@ -124,124 +124,13 @@
 		</div>
 	</div>
 </div>
-
-
-
 					</div>
-					<div class="col-sm-12 col-lg-4">
-						<!-- product card -->
-<div class="product-item bg-light">
-	<div class="card">
-		<div class="thumb-content">
-			<!-- <div class="price">$200</div> -->
-			<a href="{% url 'single.html' %}">
-				<img class="card-img-top img-fluid" src="{% static 'images/products/products-2.jpg' %}" alt="Card image cap">
-			</a>
-		</div>
-		<div class="card-body">
-		    <h4 class="card-title"><a href="{% url 'single.html' %}">Full Study Table Combo</a></h4>
-		    <ul class="list-inline product-meta">
-		    	<li class="list-inline-item">
-		    		<a href="{% url 'single.html' %}"><i class="fa fa-folder-open-o"></i>Furnitures</a>
-		    	</li>
-		    	<li class="list-inline-item">
-		    		<a href="{% url 'category.html' %}"><i class="fa fa-calendar"></i>26th December</a>
-		    	</li>
-		    </ul>
-		    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquam!</p>
-		    <div class="product-ratings">
-		    	<ul class="list-inline">
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item"><i class="fa fa-star"></i></li>
-		    	</ul>
-		    </div>
-		</div>
-	</div>
-</div>
+					{% endfor %}
 
-
-
-					</div>
-					<div class="col-sm-12 col-lg-4">
-						<!-- product card -->
-<div class="product-item bg-light">
-	<div class="card">
-		<div class="thumb-content">
-			<!-- <div class="price">$200</div> -->
-			<a href="{% url 'single.html' %}">
-				<img class="card-img-top img-fluid" src="{% static 'images/products/products-3.jpg' %}" alt="Card image cap">
-			</a>
-		</div>
-		<div class="card-body">
-		    <h4 class="card-title"><a href="{% url 'single.html' %}">11inch Macbook Air</a></h4>
-		    <ul class="list-inline product-meta">
-		    	<li class="list-inline-item">
-		    		<a href="{% url 'single.html' %}"><i class="fa fa-folder-open-o"></i>Electronics</a>
-		    	</li>
-		    	<li class="list-inline-item">
-		    		<a href="{% url 'category.html' %}"><i class="fa fa-calendar"></i>26th December</a>
-		    	</li>
-		    </ul>
-		    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquam!</p>
-		    <div class="product-ratings">
-		    	<ul class="list-inline">
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item"><i class="fa fa-star"></i></li>
-		    	</ul>
-		    </div>
-		</div>
-	</div>
-</div>
-
-
-
-					</div>
-					<div class="col-sm-12 col-lg-4">
-						<!-- product card -->
-<div class="product-item bg-light">
-	<div class="card">
-		<div class="thumb-content">
-			<!-- <div class="price">$200</div> -->
-			<a href="{% url 'single.html' %}">
-				<img class="card-img-top img-fluid" src="{% static 'images/products/products-2.jpg' %}" alt="Card image cap">
-			</a>
-		</div>
-		<div class="card-body">
-		    <h4 class="card-title"><a href="{% url 'single.html' %}">Full Study Table Combo</a></h4>
-		    <ul class="list-inline product-meta">
-		    	<li class="list-inline-item">
-		    		<a href="{% url 'single.html' %}"><i class="fa fa-folder-open-o"></i>Furnitures</a>
-		    	</li>
-		    	<li class="list-inline-item">
-		    		<a href="{% url 'category.html' %}"><i class="fa fa-calendar"></i>26th December</a>
-		    	</li>
-		    </ul>
-		    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquam!</p>
-		    <div class="product-ratings">
-		    	<ul class="list-inline">
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item"><i class="fa fa-star"></i></li>
-		    	</ul>
-		    </div>
-		</div>
-	</div>
-</div>
-
-
-
-					</div>
 				</div>
 			</div>
 		</div>
+		
 	</div>
 </section>
 
@@ -258,133 +147,26 @@
 			<div class="col-12">
 				<!-- Section title -->
 				<div class="section-title">
-					<h2>All Categories</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, provident!</p>
+					<h2>Barcha toifalar</h2>
 				</div>
 				<div class="row">
 					<!-- Category list -->
+					{% for bt in bts %}
 					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
 						<div class="category-block">
 							<div class="header">
 								<i class="fa fa-laptop icon-bg-1"></i>
-								<h4>Electronics</h4>
+								<h4>{{ bt.name }}</h4>
 							</div>
 							<ul class="category-list">
-								<li><a href="{% url 'category.html' %}"></a>">Laptops <span>93</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>">Iphone <span>233</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>">Microsoft <span>183</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>">Monitors <span>343</span></a></li>
+								<li><a href="{% url 'category.html' %}"></a>{{ bt.type1}} <span>{{ bt.number1}}</span></a></li>
+								<li><a href="{% url 'category.html' %}"></a>{{ bt.type2}} <span>{{ bt.number2}}</span></a></li>
+								<li><a href="{% url 'category.html' %}"></a>{{ bt.type3}} <span>{{ bt.number3}}</span></a></li>
+								<li><a href="{% url 'category.html' %}"></a>{{ bt.type4}}<span>{{ bt.number4}}</span></a></li>
 							</ul>
 						</div>
-					</div> <!-- /Category List -->
-					<!-- Category list -->
-					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
-						<div class="category-block">
-							<div class="header">
-								<i class="fa fa-apple icon-bg-2"></i>
-								<h4>Restaurants</h4>
-							</div>
-							<ul class="category-list">
-								<li><a href="{% url 'category.html' %}"></a>">Cafe <span>393</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>">Fast food <span>23</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>">Restaurants <span>13</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>">Food Track<span>43</span></a></li>
-							</ul>
-						</div>
-					</div> <!-- /Category List -->
-					<!-- Category list -->
-					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
-						<div class="category-block">
-							<div class="header">
-								<i class="fa fa-home icon-bg-3"></i>
-								<h4>Real Estate</h4>
-							</div>
-							<ul class="category-list">
-								<li><a href="{% url 'category.html' %}"></a>">Farms <span>93</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>">Gym <span>23</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>">Hospitals <span>83</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>">Parolurs <span>33</span></a></li>
-							</ul>
-						</div>
-					</div> <!-- /Category List -->
-					<!-- Category list -->
-					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
-						<div class="category-block">
-							<div class="header">
-								<i class="fa fa-shopping-basket icon-bg-4"></i>
-								<h4>Shoppings</h4>
-							</div>
-							<ul class="category-list">
-								<li><a href="{% url 'category.html' %}"></a>">Mens Wears <span>53</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>">Accessories <span>212</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>">Kids Wears <span>133</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>">It & Software <span>143</span></a></li>
-							</ul>
-						</div>
-					</div> <!-- /Category List -->
-					<!-- Category list -->
-					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
-						<div class="category-block">
-							<div class="header">
-								<i class="fa fa-briefcase icon-bg-5"></i>
-								<h4>Jobs</h4>
-							</div>
-							<ul class="category-list">
-								<li><a href="{% url 'category.html' %}"></a>">It Jobs <span>93</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>">Cleaning & Washing <span>233</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>">Management <span>183</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>">Voluntary Works <span>343</span></a></li>
-							</ul>
-						</div>
-					</div> <!-- /Category List -->
-					<!-- Category list -->
-					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
-						<div class="category-block">
-							<div class="header">
-								<i class="fa fa-car icon-bg-6"></i>
-								<h4>Vehicles</h4>
-							</div>
-							<ul class="category-list">
-								<li><a href="{% url 'category.html' %}"></a>">Bus <span>193</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>">Cars <span>23</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>">Motobike <span>33</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>">Rent a car <span>73</span></a></li>
-							</ul>
-						</div>
-					</div> <!-- /Category List -->
-					<!-- Category list -->
-					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
-						<div class="category-block">
-							<div class="header">
-								<i class="fa fa-paw icon-bg-7"></i>
-								<h4>Pets</h4>
-							</div>
-							<ul class="category-list">
-								<li><a href="{% url 'category.html' %}">Cats <span>65</span></a></li>
-								<li><a href="{% url 'category.html' %}">Dogs <span>23</span></a></li>
-								<li><a href="{% url 'category.html' %}">Birds <span>113</span></a></li>
-								<li><a href="{% url 'category.html' %}">Others <span>43</span></a></li>
-							</ul>
-						</div>
-					</div> <!-- /Category List -->
-					<!-- Category list -->
-					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
-						<div class="category-block">
-
-							<div class="header">
-								<i class="fa fa-laptop icon-bg-8"></i>
-								<h4>Services</h4>
-							</div>
-							<ul class="category-list">
-								<li><a href="{% url 'category.html' %}">Cleaning <span>93</span></a></li>
-								<li><a href="{% url 'category.html' %}">Car Washing <span>233</span></a></li>
-								<li><a href="{% url 'category.html' %}">Clothing <span>183</span></a></li>
-								<li><a href="{% url 'category.html' %}">Business <span>343</span></a></li>
-							</ul>
-						</div>
-					</div> <!-- /Category List -->
-
-
+					</div> 
+					{% endfor %}
 				</div>
 			</div>
 		</div>

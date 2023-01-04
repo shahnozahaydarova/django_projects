@@ -1,7 +1,14 @@
 from django.shortcuts import render
+from .models import *
 
 def home(request):
-    return render(request,'index.html')
+    ams = AsosiyMahsulotlar.objects.all()
+    bts = BarchaToifalar.objects.all()
+    context = {
+        'ams':ams,
+        'bts':bts
+    }
+    return render(request,'index.html',context)
 
 def notfile(request):
     return render(request,'404.html')
