@@ -60,18 +60,8 @@
 	</ul>
 </div>
 
-<div class="widget filter">
-	<h4 class="widget-header">Show Produts</h4>
-	<select>
-		<option>Popularity</option>
-		<option value="1">Top rated</option>
-		<option value="2">Lowest Price</option>
-		<option value="4">Highest Price</option>
-	</select>
-</div>
-
 <div class="widget price-range w-100">
-	<h4 class="widget-header">Price Range</h4>
+	<h4 class="widget-header">Narx diapazoni</h4>
 	<div class="block">
 						<input class="range-track w-100" type="text" data-slider-min="0" data-slider-max="5000" data-slider-step="5"
 						data-slider-value="[0,5000]">
@@ -81,33 +71,7 @@
 	</div>
 </div>
 
-<div class="widget product-shorting">
-	<h4 class="widget-header">By Condition</h4>
-	<div class="form-check">
-	  <label class="form-check-label">
-	    <input class="form-check-input" type="checkbox" value="">
-	    Brand New
-	  </label>
-	</div>
-	<div class="form-check">
-	  <label class="form-check-label">
-	    <input class="form-check-input" type="checkbox" value="">
-	    Almost New
-	  </label>
-	</div>
-	<div class="form-check">
-	  <label class="form-check-label">
-	    <input class="form-check-input" type="checkbox" value="">
-	    Gently New
-	  </label>
-	</div>
-	<div class="form-check">
-	  <label class="form-check-label">
-	    <input class="form-check-input" type="checkbox" value="">
-	    Havely New
-	  </label>
-	</div>
-</div>
+
 
 				</div>
 			</div>
@@ -131,7 +95,7 @@
 										<a href="#!" onclick="event.preventDefault();" class="text-info"><i class="fa fa-th-large"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="{% url 'adlist.html' %}"><i class="fa fa-reorder"></i></a>
+										<a href="#"><i class="fa fa-reorder"></i></a>
 									</li>
 								</ul>
 							</div>
@@ -211,18 +175,9 @@
 	</ul>
 </div>
 
-<div class="widget filter">
-	<h4 class="widget-header">Show Produts</h4>
-	<select>
-		<option>Popularity</option>
-		<option value="1">Top rated</option>
-		<option value="2">Lowest Price</option>
-		<option value="4">Highest Price</option>
-	</select>
-</div>
 
 <div class="widget price-range w-100">
-	<h4 class="widget-header">Price Range</h4>
+	<h4 class="widget-header">Narx diapazoni</h4>
 	<div class="block">
 						<input class="range-track w-100" type="text" data-slider-min="0" data-slider-max="5000" data-slider-step="5"
 						data-slider-value="[0,5000]">
@@ -232,33 +187,6 @@
 	</div>
 </div>
 
-<div class="widget product-shorting">
-	<h4 class="widget-header">By Condition</h4>
-	<div class="form-check">
-	  <label class="form-check-label">
-	    <input class="form-check-input" type="checkbox" value="">
-	    Brand New
-	  </label>
-	</div>
-	<div class="form-check">
-	  <label class="form-check-label">
-	    <input class="form-check-input" type="checkbox" value="">
-	    Almost New
-	  </label>
-	</div>
-	<div class="form-check">
-	  <label class="form-check-label">
-	    <input class="form-check-input" type="checkbox" value="">
-	    Gently New
-	  </label>
-	</div>
-	<div class="form-check">
-	  <label class="form-check-label">
-	    <input class="form-check-input" type="checkbox" value="">
-	    Havely New
-	  </label>
-	</div>
-</div>
 
 				</div>
 			</div>
@@ -282,7 +210,7 @@
 										<a href="#!" onclick="event.preventDefault();" class="text-info"><i class="fa fa-th-large"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="{% url 'adlist.html' %}"><i class="fa fa-reorder"></i></a>
+										<a href="#"><i class="fa fa-reorder"></i></a>
 									</li>
 								</ul>
 							</div>
@@ -291,78 +219,39 @@
 				</div>
 				<div class="product-grid-list">
 					<div class="row mt-30">
-						<div class="col-lg-4 col-md-6">
-							<!-- product card -->
-<div class="product-item bg-light">
-	<div class="card">
-		<div class="thumb-content">
-			<!-- <div class="price">$200</div> -->
-			<a href="{% url 'single.html' %}">
-				<img class="card-img-top img-fluid" src="{% static 'images/products/products-1.jpg' %}" alt="Card image cap">
-			</a>
-		</div>
-		<div class="card-body">
-		    <h4 class="card-title"><a href="{% url 'single.html' %}">11inch Macbook Air</a></h4>
-		    <ul class="list-inline product-meta">
-		    	<li class="list-inline-item">
-		    		<a href="{% url 'single.html' %}"><i class="fa fa-folder-open-o"></i>Electronics</a>
-		    	</li>
-		    	<li class="list-inline-item">
-		    		<a href="{% url 'category.html' %}"><i class="fa fa-calendar"></i>26th December</a>
-		    	</li>
-		    </ul>
-		    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquam!</p>
-		    <div class="product-ratings">
-		    	<ul class="list-inline">
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item"><i class="fa fa-star"></i></li>
-		    	</ul>
-		    </div>
-		</div>
-	</div>
-</div>
-
-
-
+						{% for m in ms %}
+						<div class="col-sm-12 col-lg-4">
+													<!-- product card -->
+							<div class="product-item bg-light">
+								<div class="card">
+									<div class="thumb-content">
+										<!-- <div class="price">$200</div> -->
+										<a href="{% url 'single.html' %}">
+											<img class="card-img-top img-fluid" src="{{ m.img }}" alt="Card image cap">
+										</a>
+									</div>
+									<div class="card-body">
+										<h4 class="card-title"><a href="{% url 'single.html' %}">{{ m.name }}</a></h4>
+										<ul class="list-inline product-meta">
+											<li class="list-inline-item">
+												<a href="{% url 'category.html' %}"><i class="fa fa-calendar"></i>{{ m.date }}</a>
+											</li>
+										</ul>
+										<p class="card-text"><i class="fa fa-folder-open-o"></i>{{ m.content}}</p>
+										<div class="product-ratings">
+											<ul class="list-inline">
+												<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="col-lg-4 col-md-6">
-							<!-- product card -->
-<div class="product-item bg-light">
-	<div class="card">
-		<div class="thumb-content">
-			<!-- <div class="price">$200</div> -->
-			<a href="{% url 'single.html' %}">
-				<img class="card-img-top img-fluid" src="{% static 'images/products/products-2.jpg' %}" alt="Card image cap">
-			</a>
-		</div>
-		<div class="card-body">
-		    <h4 class="card-title"><a href="{% url 'single.html' %}">Study Table Combo</a></h4>
-		    <ul class="list-inline product-meta">
-		    	<li class="list-inline-item">
-		    		<a href="{% url 'single.html' %}"><i class="fa fa-folder-open-o"></i>Furnitures</a>
-		    	</li>
-		    	<li class="list-inline-item">
-		    		<a href="{% url 'category.html' %}"><i class="fa fa-calendar"></i>26th December</a>
-		    	</li>
-		    </ul>
-		    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquam!</p>
-		    <div class="product-ratings">
-		    	<ul class="list-inline">
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-		    		<li class="list-inline-item"><i class="fa fa-star"></i></li>
-		    	</ul>
-		    </div>
-		</div>
-	</div>
-</div>
-
-						</div>
+						{% endfor %}
 					</div>
 				</div>
 				<div class="pagination justify-content-center">

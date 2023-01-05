@@ -18,8 +18,6 @@ def notfile(request):
 def about(request):
     return render(request,'about-us.html')
 
-def ad_list(request):
-    return render(request,'ad-list-view.html')
 
 def blog(request):
     return render(request,'blog.html')
