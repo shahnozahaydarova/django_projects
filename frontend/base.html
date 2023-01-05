@@ -43,7 +43,8 @@
                 <div class="col-md-12">
                     <nav class="navbar navbar-expand-lg navbar-light navigation">
                         <a class="navbar-brand" href="{% url 'index' %}">
-                            <img src="{% static 'images/logo.png' %}" alt="">
+                            <h1 class="logo">Yasin</h1>
+                            <!-- <img class="logo" src="{% static 'images/logo.png' %}" alt=""> -->
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,6 +54,19 @@
                             <ul class="navbar-nav ml-auto main-nav ">
                                 <li class="nav-item active">
                                     <a class="nav-link" href="{% url 'index' %}">Asosiy sahifa</a>
+                                </li>
+
+                                <li class="nav-item dropdown dropdown-slide @@listing">
+                                    <a class="nav-link dropdown-toggle" href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Ro'yxatlar <span><i class="fa fa-angle-down"></i></span>
+                                    </a>
+                                    <!-- Dropdown list -->
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item @@category" href="{% url 'category.html' %}">Mahsulotlar ro'yxati</a></li>
+                                        <li><a class="dropdown-item @@listView" href="{% url 'adlist.html' %}">Reklamalar ro'yxati</a></li>
+                                        
+                                        
+                                    </ul>
                                 </li>
                                 
                                 <li class="nav-item dropdown dropdown-slide @@pages">
@@ -73,18 +87,7 @@
                                         <li><a class="dropdown-item @@terms" href="{% url 'terms-conditions.html' %}">Foydalanish shartlari</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item dropdown dropdown-slide @@listing">
-                                    <a class="nav-link dropdown-toggle" href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Ro'yxatlar <span><i class="fa fa-angle-down"></i></span>
-                                    </a>
-                                    <!-- Dropdown list -->
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item @@category" href="{% url 'category.html' %}">Mahsulotlar ro'yxati</a></li>
-                                        <li><a class="dropdown-item @@listView" href="{% url 'adlist.html' %}">Reklamalar ro'yxati</a></li>
-                                        
-                                        
-                                    </ul>
-                                </li>
+                                
                             </ul>
                             <ul class="navbar-nav ml-auto mt-10">
                                 <li class="nav-item">

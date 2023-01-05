@@ -633,6 +633,10 @@ ul.pagination .active a {
   margin-right: 8px;
   padding: 6px 20px !important;
 }
+.logo {
+  width: 210px;
+  height: 90px;
+}
 @media (max-width: 400px) {
   .login-button {
     display: inline-block;
