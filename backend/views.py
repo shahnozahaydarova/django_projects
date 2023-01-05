@@ -2,10 +2,12 @@ from django.shortcuts import render
 from .models import *
 
 def home(request):
-    ams = AsosiyMahsulotlar.objects.all()
+    ams = MaishiyTehnikalar.objects.all()
+    ms = Mebellar.objects.all()
     bts = BarchaToifalar.objects.all()
     context = {
         'ams':ams,
+        'ms':ms,
         'bts':bts
     }
     return render(request,'index.html',context)
@@ -23,7 +25,13 @@ def blog(request):
     return render(request,'blog.html')
 
 def category(request):
-    return render(request,'category.html')
+    ams = MaishiyTehnikalar.objects.all()
+    ms = Mebellar.objects.all()
+    context = {
+        'ams':ams,
+        'ms':ms,
+    }
+    return render(request,'category.html',context)
 
 def contact(request):
     return render(request,'contact-us.html')

@@ -1,6 +1,16 @@
 from django.db import models
 
-class AsosiyMahsulotlar(models.Model):
+class MaishiyTehnikalar(models.Model):
+    name = models.CharField(max_length=40)
+    date = models.DateTimeField(auto_now_add=True)
+    content = models.TextField()
+    img = models.TextField()
+
+    def __str__(self) -> str:
+        return self.name
+
+
+class Mebellar(models.Model):
     name = models.CharField(max_length=40)
     date = models.DateTimeField(auto_now_add=True)
     content = models.TextField()
@@ -23,4 +33,8 @@ class BarchaToifalar(models.Model):
 
     def __str__(self) -> str:
         return self.name
+
+
+
+
 
