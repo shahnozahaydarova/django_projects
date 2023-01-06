@@ -23,11 +23,15 @@ def blog(request):
     return render(request,'blog.html')
 
 def category(request):
-    ams = MaishiyTehnikalar.objects.all()
+    mts = MaishiyTehnikalar.objects.all()
     ms = Mebellar.objects.all()
+    mtss = MaishiyTehnikalarSoni.objects.all()
+    mss = MebellarSoni.objects.all()
     context = {
-        'ams':ams,
+        'mts': mts,
         'ms':ms,
+        'mtss':mtss,
+        'mss':mss,
     }
     return render(request,'category.html',context)
 

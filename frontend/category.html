@@ -54,9 +54,9 @@
 	<h4 class="widget-header">Maishiy tehnikalar</h4>
 	<ul class="category-list">
 		<li><a href="{% url 'category.html' %}"><b>Nomi</b> <span><b>Soni</b></span></a></li>
-		<li><a href="{% url 'category.html' %}">Iphone <span>233</span></a></li>
-		<li><a href="{% url 'category.html' %}">Microsoft  <span>183</span></a></li>
-		<li><a href="{% url 'category.html' %}">Monitors <span>343</span></a></li>
+		{% for mts in mtss%}
+		<li><a href="{% url 'category.html' %}">{{ mts.name }} <span>mts.number</span></a></li>
+		{% endfor %}
 	</ul>
 </div>
 
@@ -104,7 +104,7 @@
 				</div>
 				<div class="product-grid-list">
 					<div class="row mt-30">
-						{% for am in ams %}
+						{% for mt in mts %}
 					<div class="col-sm-12 col-lg-4">
 						<!-- product card -->
 						<div class="product-item bg-light">
@@ -112,17 +112,17 @@
 								<div class="thumb-content">
 									<!-- <div class="price">$200</div> -->
 									<a href="{% url 'single.html' %}">
-										<img class="card-img-top img-fluid" src="{{ am.img }}" alt="Card image cap">
+										<img class="card-img-top img-fluid" src="{{ mt.img }}" alt="Card image cap">
 									</a>
 								</div>
 								<div class="card-body">
-									<h4 class="card-title"><a href="{% url 'single.html' %}">{{ am.name }}</a></h4>
+									<h4 class="card-title"><a href="{% url 'single.html' %}">{{ mt.name }}</a></h4>
 									<ul class="list-inline product-meta">
 										<li class="list-inline-item">
-											<a href="{% url 'category.html' %}"><i class="fa fa-calendar"></i>{{ am.date }}</a>
+											<a href="{% url 'category.html' %}"><i class="fa fa-calendar"></i>{{ mt.date }}</a>
 										</li>
 									</ul>
-									<p class="card-text"><i class="fa fa-folder-open-o"></i>{{ am.content}}</p>
+									<p class="card-text"><i class="fa fa-folder-open-o"></i>{{ mt.content}}</p>
 									<div class="product-ratings">
 										<ul class="list-inline">
 											<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
@@ -145,16 +145,16 @@
 							<li class="page-item">
 								<a class="page-link" href="{% url 'category.html' %}" aria-label="Previous">
 									<span aria-hidden="true">&laquo;</span>
-									<span class="sr-only">Previous</span>
+									<span class="sr-only">Oldingi	</span>
 								</a>
 							</li>
 							<li class="page-item"><a class="page-link" href="{% url 'category.html' %}">1</a></li>
 							<li class="page-item active"><a class="page-link" href="{% url 'category.html' %}">2</a></li>
-							<li class="page-item"><a class="page-link" href="{% url 'category.html' %}">3</a></li>
+							<li class="page-item"><a class="page-link" vhref="{% url 'category.html' %}">3</a></li>
 							<li class="page-item">
 								<a class="page-link" href="{% url 'category.html' %}" aria-label="Next">
 									<span aria-hidden="true">&raquo;</span>
-									<span class="sr-only">Next</span>
+									<span class="sr-only">Keyingi</span>
 								</a>
 							</li>
 						</ul>
@@ -166,12 +166,12 @@
 			<div class="col-lg-3 col-md-4">
 				<div class="category-sidebar">
 					<div class="widget category-list">
-	<h4 class="widget-header">Maishiy tehnikalar</h4>
+	<h4 class="widget-header">Mebellar</h4>
 	<ul class="category-list">
 		<li><a href="{% url 'category.html' %}"><b>Nomi</b> <span><b>Soni</b></span></a></li>
-		<li><a href="{% url 'category.html' %}">Iphone <span>233</span></a></li>
-		<li><a href="{% url 'category.html' %}">Microsoft  <span>183</span></a></li>
-		<li><a href="{% url 'category.html' %}">Monitors <span>343</span></a></li>
+		{% for ms in mss%}
+		<li><a href="{% url 'category.html' %}">{{ms.name}}<span>{{ms.number}}</span></a></li>
+		{% endfor %}
 	</ul>
 </div>
 
@@ -260,7 +260,7 @@
 							<li class="page-item">
 								<a class="page-link" href="{% url 'category.html' %}" aria-label="Previous">
 									<span aria-hidden="true">&laquo;</span>
-									<span class="sr-only">Previous</span>
+									<span class="sr-only">Oldingi</span>
 								</a>
 							</li>
 							<li class="page-item"><a class="page-link" href="{% url 'category.html' %}">1</a></li>
@@ -269,7 +269,7 @@
 							<li class="page-item">
 								<a class="page-link" href="{% url 'category.html' %}" aria-label="Next">
 									<span aria-hidden="true">&raquo;</span>
-									<span class="sr-only">Next</span>
+									<span class="sr-only">Keyingi</span>
 								</a>
 							</li>
 						</ul>
