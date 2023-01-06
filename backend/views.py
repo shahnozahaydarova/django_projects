@@ -36,7 +36,13 @@ def category(request):
     return render(request,'category.html',context)
 
 def contact(request):
-    return render(request,'contact-us.html')
+    mts = MaishiyTehnikalar.objects.all()
+    ms = Mebellar.objects.all()
+    context = {
+        'mts': mts,
+        'ms':ms,
+    }
+    return render(request,'contact-us.html',context)
 
 def login(request):
     return render(request,'login.html')
