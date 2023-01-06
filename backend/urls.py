@@ -11,7 +11,6 @@ urlpatterns = [
     path('category',category,name="category.html"),
     path('contact',contact,name='contact-us.html'),
     path('login',login,name="login.html"),
-    path('package',package,name="package.html"),
     path('register',register,name="register.html"),
     path('singleblog',singleblog,name="single-blog.html"),
     path('single',single,name="single.html"),
