@@ -65,5 +65,3 @@ def store(request):
 def terms(request):
     return render(request,'terms-condition.html')
 
-def profile(request):
-    return render(request,'user-profile.html')

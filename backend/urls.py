@@ -17,5 +17,4 @@ urlpatterns = [
     path('single',single,name="single.html"),
     path('store',store,name="store.html"),
     path('terms',terms,name="terms-conditions.html"),
-    path('profile',profile,name="user-profile.html")
 ]
