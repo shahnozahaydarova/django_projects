@@ -15,5 +15,4 @@ urlpatterns = [
     path('singleblog',singleblog,name="single-blog.html"),
     path('single',single,name="single.html"),
     path('store',store,name="store.html"),
-    path('terms',terms,name="terms-conditions.html"),
 ]

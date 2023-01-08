@@ -59,6 +59,5 @@ def single(request):
 def store(request):
     return render(request,'store.html')
 
-def terms(request):
-    return render(request,'terms-condition.html')
+
 
