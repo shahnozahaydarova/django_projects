@@ -111,12 +111,12 @@
 							<div class="card">
 								<div class="thumb-content">
 									<!-- <div class="price">$200</div> -->
-									<a href="{% url 'single.html' %}">
+									<a href="{% url '#' %}">
 										<img class="card-img-top img-fluid" src="{{ mt.img }}" alt="Card image cap">
 									</a>
 								</div>
 								<div class="card-body">
-									<h4 class="card-title"><a href="{% url 'single.html' %}">{{ mt.name }}</a></h4>
+									<h4 class="card-title"><a href="{% url '#' %}">{{ mt.name }}</a></h4>
 									<ul class="list-inline product-meta">
 										<li class="list-inline-item">
 											<a href="{% url 'category.html' %}"><i class="fa fa-calendar"></i>{{ mt.date }}</a>
@@ -226,12 +226,12 @@
 								<div class="card">
 									<div class="thumb-content">
 										<!-- <div class="price">$200</div> -->
-										<a href="{% url 'single.html' %}">
+										<a href="#">
 											<img class="card-img-top img-fluid" src="{{ m.img }}" alt="Card image cap">
 										</a>
 									</div>
 									<div class="card-body">
-										<h4 class="card-title"><a href="{% url 'single.html' %}">{{ m.name }}</a></h4>
+										<h4 class="card-title"><a href="#">{{ m.name }}</a></h4>
 										<ul class="list-inline product-meta">
 											<li class="list-inline-item">
 												<a href="{% url 'category.html' %}"><i class="fa fa-calendar"></i>{{ m.date }}</a>

@@ -18,10 +18,6 @@ def notfile(request):
 def about(request):
     return render(request,'about-us.html')
 
-
-def blog(request):
-    return render(request,'blog.html')
-
 def category(request):
     mts = MaishiyTehnikalar.objects.all()
     ms = Mebellar.objects.all()
@@ -49,12 +45,6 @@ def login(request):
 
 def register(request):
     return render(request,'register.html')
-
-def singleblog(request):
-    return render(request,'single-blog.html')
-
-def single(request):
-    return render(request,'single.html')
 
 def store(request):
     return render(request,'store.html')
