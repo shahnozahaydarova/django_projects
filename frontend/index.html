@@ -176,17 +176,18 @@
 						<div class="category-block">
 							<div class="header">
 								<i class="fa fa-shopping-basket icon-bg-4"></i>
-								<h4>{{ bt.name }}</h4>
+								<h4>Shoppings</h4>
 							</div>
 							<ul class="category-list">
 								<li><a href="{% url 'category.html' %}"><b>Nomi</b> <span><b>Soni</b></span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>{{ bt.type1}} <span>{{ bt.number1}}</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>{{ bt.type2}} <span>{{ bt.number2}}</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>{{ bt.type3}} <span>{{ bt.number3}}</span></a></li>
-								<li><a href="{% url 'category.html' %}"></a>{{ bt.type4}}<span>{{ bt.number4}}</span></a></li>
+
+								<li><a href="{% url 'category.html' %}">{{ bt.type1}} <span>{{ bt.number1}}</span></a></li>
+								<li><a href="{% url 'category.html' %}">{{ bt.type2}} <span>{{ bt.number2}}</span></a></li>
+								<li><a href="{% url 'category.html' %}">{{ bt.type3}} <span>{{ bt.number3}}</span></a></li>
+								<li><a href="{% url 'category.html' %}">{{ bt.type4}} <span>{{ bt.number4}}</span></a></li>
 							</ul>
 						</div>
-					</div> 
+					</div>
 					{% endfor %}
 				</div>
 			</div>
@@ -205,7 +206,7 @@
 	<div class="container">
 		<div class="row justify-content-md-center text-center">
 			<div class="col-md-8">
-				<div cla0   ss="content-holder">
+				<div class="content-holder">
 					<h2>Dunyodagi yetakchi, yirik ishlab chiqaruvchilarning zamonaviy, 
 						markali maishiy tehnika va mebellarini sotuvchi markaz hisoblanadi.Mijozlarimiz 
 						bizning olamiga tashrif buyurib, o'zlariga kerak bo'lgan mahsulotlarni topib, 
