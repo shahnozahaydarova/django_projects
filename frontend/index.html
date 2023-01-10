@@ -176,7 +176,7 @@
 						<div class="category-block">
 							<div class="header">
 								<i class="fa fa-shopping-basket icon-bg-4"></i>
-								<h4>Shoppings</h4>
+								<h4>{{ bt.name }}</h4>
 							</div>
 							<ul class="category-list">
 								<li><a href="{% url 'category.html' %}"><b>Nomi</b> <span><b>Soni</b></span></a></li>
@@ -212,7 +212,7 @@
 						bizning olamiga tashrif buyurib, o'zlariga kerak bo'lgan mahsulotlarni topib, 
 						keng qamrovli xarid qilish qilishlari mumkin.</h2>
 					<ul class="list-inline mt-30">
-						<li class="list-inline-item"><a class="btn btn-secondary" href="category.html">Browser Listing</a></li>
+						<li class="list-inline-item"><a class="btn btn-secondary" href="{% url 'category.html' %}">Mahsulotlar</a></li>
 					</ul>
 				</div>
 			</div>
