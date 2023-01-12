@@ -1,6 +1,10 @@
 from django.db import models
 
-class MaishiyTehnikalar(models.Model):
+class MaishiyTehnikalar(models.Model): 
+    class Meta:
+        verbose_name = 'Maishiy Tehnika'
+        verbose_name_plural = 'Maishiy Tehnika'
+
     name = models.CharField(max_length=40)
     date = models.DateTimeField(auto_now_add=True)
     content = models.TextField()
